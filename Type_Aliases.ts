@@ -12,6 +12,7 @@ const personData = (user: User) => {
 };
 console.log(personData({ name: "John Doe", age: 30, location: "Abuja" }));
 
+// Destructuring
 const userData = ({ name, age, location }: User) => {
   return { name, age, location };
 };

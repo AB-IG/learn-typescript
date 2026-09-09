@@ -12,6 +12,7 @@ interface Dog {
   local: boolean;
 }
 
+// Using an interface to type a Generic
 const localBreed = func<Dog>(
   { name: "Bingo", local: true },
   { name: "Jack", local: false },

@@ -4,8 +4,19 @@ const func = <T>(a: T, b: T): [T, T] => {
   return [a, b];
 };
 
-const res = func<number>(1, 2);
-const res_2 = func<string>("John", "Doe");
+const num = func<number>(1, 2);
+const str = func<string>("John", "Doe");
 
-console.log(res);
-console.log(res_2);
+interface Dog {
+  name: string;
+  local: boolean;
+}
+
+const localBreed = func<Dog>(
+  { name: "Bingo", local: true },
+  { name: "Jack", local: false },
+);
+
+console.log(num);
+console.log(str);
+console.log(localBreed);
